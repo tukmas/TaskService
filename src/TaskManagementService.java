@@ -4,7 +4,7 @@ import java.time.format.DateTimeFormatter;
 import java.time.format.DateTimeParseException;
 import java.util.*;
 
-public class Service {
+public class TaskManagementService {
     private static final Map<Integer, RepeatabilityTask> actualTasks = new HashMap<>();
     private static final Map<Integer, RepeatabilityTask> archivedTasks = new HashMap<>();
     public static void addTask(Scanner scanner) {

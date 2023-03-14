@@ -11,22 +11,22 @@ public class Main {
                     int menu = scanner.nextInt();
                     switch (menu) {
                         case 1:
-                            Service.addTask(scanner);
+                            TaskManagementService.addTask(scanner);
                             break;
                         case 2:
-                            Service.editTask(scanner);
+                            TaskManagementService.editTask(scanner);
                             break;
                         case 3:
-                            Service.deleteTask(scanner);
+                            TaskManagementService.deleteTask(scanner);
                             break;
                         case 4:
-                            Service.getTaskByDay(scanner);
+                            TaskManagementService.getTaskByDay(scanner);
                             break;
                         case 5:
-                            Service.printArchivedTasks();
+                            TaskManagementService.printArchivedTasks();
                             break;
                         case 6:
-                            Service.getGroupedByDate();
+                            TaskManagementService.getGroupedByDate();
                             break;
                         case 0:
                             break label;
