@@ -8,8 +8,4 @@ public class YearlyTask extends Task implements RepeatabilityTask{
     public boolean checkOccurance(LocalDateTime requestedDate) {
         return getFirstDate().getDayOfYear() == requestedDate.getDayOfYear();
     }
-    @Override
-    public void setArchived(boolean archived) {
-
-    }
 }

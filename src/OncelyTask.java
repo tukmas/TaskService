@@ -10,10 +10,5 @@ public class OncelyTask extends Task implements RepeatabilityTask {
     public boolean checkOccurance(LocalDateTime requestedDate) {
         return getFirstDate().toLocalDate().equals(requestedDate.toLocalDate());
     }
-
-    @Override
-    public void setArchived(boolean archived) {
-
-    }
 }
 
